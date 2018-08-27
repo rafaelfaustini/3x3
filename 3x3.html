@@ -2,54 +2,97 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Calculadora Sistemas 3x3 - Rafael Faustini</title>
 
-<script src="ze.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-<link rel= "stylesheet" type="text/css" media="screen and (min-width: 0px)" href="small.css"/>
-<link rel= "stylesheet" type="text/css" href="3x3.js"/>
-<link rel= "stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="medium.css"/>
-<link rel= "stylesheet" type="text/css" media="screen and (min-width: 1350px)" href="large.css"/>
+<script src="3x3.js"></script>
 <link rel="stylesheet" type="text/css" href="http://overpass-30e2.kxcdn.com/overpass.css" />
-
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="res">
-<h1 style="font-family: "overpass";">Snizer Cramer Online By Rafael Faustini</h1>
-<h2 style="font-family: "overpass"";>Resolução de Sistemas 3x3 com 3 Variáveis</h2>
-<h3 style="font-family: "overpass";color">Essa calculadora permite a resolução de Sistemas Lineares 3x3 de 3 variáveis.</h3>
+<body class="stylish-color text-white">
+  <div class="container text-center">
+<h1 class="mt-1">Snizer Cramer Online By Rafael Faustini</h1>
+<h2>Resolução de Sistemas 3x3 com 3 Variáveis</h2>
+<h3>Essa calculadora permite a resolução de Sistemas Lineares 3x3 de 3 variáveis.</h3>
 
-<div class="tab" style="overflow-x:auto;">
-<table>
-   <tr>
-    <td><input type="number" name="a1" id="a1" value=""><font class="txt"><b> x</b></font></td>
-    <td><input type="number" name="b1" id="b1" value=""><font class="txt"><b> y</b></font></td>
-    <td><input type="number" name="c1" id="c1" value="""><font color="white"><b> z</b></font></td>
-	<td><font class="txt"><b> = </b></font><input type="number" name="r1" id="r1" value=""></td>
- </tr>
-<tr>
-   <td><input type="number" name="a2" id="a2" value="" "><font class="txt"><b> x</b></font></td>
-   <td><input type="number" name="b2" id="b2" value="""><font class="txt"><b> y</b></font></td>
-   <td><input type="number" name="c2" id="c2" value=""><font class="txt"><b> z</b></font></td>
-   <td> <font class="txt"><b> = </b></font><input type="number" name="r2" id="r2" value="" ></td>
- </tr>
-<tr>
-   <td><input type="number" name="a3" id="a3" value="" > <font class="txt"><b>x</b></font></td>
-   <td><input type="number" name="b3" id="b3" value=""><font class="txt"><b> y</b></font></td>
-   <td><input type="number" name="c3" id="c3" value=""><font class="txt"><b> z</b></font></td><br>
-   <td><font class="txt"><b> = </b></font><input type="number" name="r3" id="r3" value=""></td>
-</tr>
-</table>
+<div>
+<form class="form-inline">
+
+  <div class="form-group md-form">
+    <input type="number" id="a1" name="X" value="" class="form-control form-control-lg text-white">
+  </div>
+    <label for="a1" class="mt-4 mx-2"> X </label>
+    <div class="form-group md-form">
+      <input type="number" id="b1" name="Y" value="" class="form-control form-control-lg text-white">
+    </div>
+      <label for="rg-from" class="mt-4 mx-2"> Y </label>
+      <div class="form-group md-form">
+        <input type="number" id="c1" name="rg-from" value="" class="form-control form-control-lg text-white">
+      </div>
+        <label for="rg-from" class="mt-4 mx-2"> Z = </label>
+        <div class="form-group md-form">
+          <input type="number" id="r1" name="rg-from" value="" class="form-control form-control-lg text-white">
+        </div>
+  <!-- rest of form -->
+</form>
+<form class="form-inline">
+  <div class="form-group md-form">
+    <input type="number" id="a2" name="X" value="" class="form-control form-control-lg text-white">
+  </div>
+    <label for="a1" class="mt-4 mx-2"> X </label>
+    <div class="form-group md-form">
+      <input type="number" id="b2" name="Y" value="" class="form-control form-control-lg text-white">
+    </div>
+      <label for="rg-from" class="mt-4 mx-2"> Y </label>
+      <div class="form-group md-form">
+        <input type="number" id="c2" name="rg-from" value="" class="form-control form-control-lg text-white">
+      </div>
+        <label for="rg-from" class="mt-4 mx-2"> Z = </label>
+        <div class="form-group md-form">
+          <input type="number" id="r2" name="rg-from" value="" class="form-control form-control-lg text-white">
+        </div>
+
+  <!-- rest of form -->
+</form>
+<form class="form-inline">
+
+  <div class="form-group md-form">
+    <input type="number" id="a3" name="X" value="" class="form-control form-control-lg text-white">
+  </div>
+    <label for="a3" class="mt-4 mx-2"> X </label>
+    <div class="form-group md-form">
+      <input type="number" id="b3" name="Y" value="" class="form-control form-control-lg text-white">
+    </div>
+      <label for="rg-from" class="mt-4 mx-2"> Y </label>
+      <div class="form-group md-form">
+        <input type="number" id="c3" name="rg-from" value="" class="form-control form-control-lg text-white">
+      </div>
+        <label for="rg-from" class="mt-4 mx-2"> Z = </label>
+        <div class="form-group md-form">
+          <input type="number" id="r3" name="rg-from" value="" class="form-control form-control-lg text-white">
+        </div>
+  <!-- rest of form -->
+
+</form>
+<form class="form-inline">
+<button class="btn btn-primary mt-4" onclick="exec()">Calcular</button>
+</form>
+
+
+
+
 </div>
 
-<br><br>
 
-
-<button class="pure-button pure-button-primary" style="background-color: #cc3d2e;" onclick="exec()">Calcular</button>
-<br><br>
 <hr color="white">
-<br>
-<font color="white"> <button id="ex" class="link"><b>&#x25CB Exemplo de sistema para entrada</b></button></font>
+<div class="text-center">
+ <button id="ex" class="btn btn-secondary">Exemplo de sistema para entrada</button>
+</div>
 <script>
 var button = document.getElementById("ex");
 button.onclick = function(){
@@ -65,27 +108,29 @@ document.getElementById("c3").value = "-1";
 document.getElementById("r1").value = "-3";
 document.getElementById("r2").value = "4";
 document.getElementById("r3").value = "2";
-
-
-
 }
-
 </script>
 
-<p class="box" >
+<p class="text-center" >
 
-<span style="text-align: center;">
-<font class="txt">3x-y+4z=-3<br>
-x+5y-3z=4
+
+<font class="txt">3x-y+4z= -3<br>
+x+5y-3z= 4
 <br>
-9x+3y-z=2<br></font>
-</span>
-
+9x+3y-z= 2<br></font>
 </p>
-<br>
-<font class="txt"> <b>&#x25CB Essa aplicação está em testes, problemas são recorrentes <b></font><br>
-<font class="txt"> <b>&#x25CB Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustini.com.br)</b></font>
 
+
+<p class="text-center"> Essa aplicação está em testes, problemas são recorrentes</p>
+<p class="text-center"> Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustini.com.br)</p>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>
 </div>
 
 </body>
