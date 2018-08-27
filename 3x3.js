@@ -1,4 +1,4 @@
-function exec() {
+﻿function exec() {
 document.body.style.backgroundColor = "#27ae60";
     var a1 = document.getElementById("a1").value;
 	var a2 = document.getElementById("a2").value;
@@ -55,7 +55,6 @@ alert("Por favor preencha todos os campos corretamente (Em caso de vazio preench
 }
 else
 {
-document.write('<img src="snizer.png"style="width:192px;height:108px;">');
 document.write('<br><b><font color=white face="overpass">Regra de Cramer Online By Rafael Faustini</font></br></b>');
 var d = new Date();
 document.write('<font color=white face="overpass"><br><b>'+Date()+'</b><br><br></font>');
